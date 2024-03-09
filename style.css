@@ -5,6 +5,7 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+
 body {
     background: black;
     color: white;
@@ -17,10 +18,13 @@ nav {
     display: flex;
     justify-content: center;
 }
+
 a {
     color: white;
     text-decoration: none;
+    transition: 0.3s;
 }
+
 .navbar {
     width: 80%;
     height: 100%;
@@ -28,24 +32,29 @@ a {
     justify-content: space-between;
     align-items: center;
 }
+
 .navbar img {
     width: 150px;
     height: 100%;
     object-fit: contain;
 }
+
 .navbar .navLinks {
     display: flex;
     gap: 30px;
     font-weight: 600;
     font-size: 18px;
 }
+
 .navLinks a {
     color: #555;
     transition: 0.3s;
 }
+
 .navLinks a:hover {
     color: white;
 }
+
 .dropDownChild {
     position: absolute;
     display: flex;
@@ -57,25 +66,31 @@ a {
     transform: scale(0);
     padding: 1px;
 }
+
 .navbar .menu {
     display: none;
 }
+
 .dropDownChild a {
     color: black;
-    padding:10px 20px;
+    padding: 10px 20px;
 }
+
 .dropDown:hover .dropDownChild {
     opacity: 1;
     transform: scale(1);
 }
-.dropDownChild a:hover{
+
+.dropDownChild a:hover {
     background: black;
 }
+
 .navButtons {
     display: flex;
     gap: 30px;
     align-items: center;
 }
+
 .navButtons button {
     padding: 10px 17px;
     border-radius: 5px;
@@ -87,14 +102,17 @@ a {
     border: 2px solid #0d99ff;
     font-weight: 600;
 }
+
 .navButtons button:hover {
     background: #0d99ff;
     color: white;
 }
+
 .navButtons button:nth-child(2) {
     background: #0d99ff;
     color: white;
 }
+
 .navButtons button:nth-child(2):hover {
     background: transparent;
     color: #555;
@@ -107,10 +125,12 @@ header {
     text-align: center;
     padding-top: 50px;
 }
+
 header h1 {
     font-size: 60px;
     line-height: 60px;
 }
+
 header .headerbg {
     margin: 0px auto;
     background: linear-gradient(90deg, #FE6783 1.9%, #FFBF84 97.1%);
@@ -119,16 +139,19 @@ header .headerbg {
     color: transparent;
     font-weight: 900;
 }
+
 header p {
     font-size: 30px;
     margin: 80px 0px 15px;
 }
+
 header .headerButtons {
     display: flex;
     justify-content: center;
     gap: 30px;
     margin: 20px 0px;
 }
+
 .headerButtons button {
     width: 200px;
     font-size: 18px;
@@ -136,12 +159,14 @@ header .headerButtons {
     height: 50px;
     border-radius: 10px;
 }
+
 .btn1 {
     background: #0d99ff;
     border: 2px solid #0d99ff;
     color: white;
     transition: all 0.3s;
 }
+
 .btn1:hover {
     background: transparent;
     color: #555;
@@ -154,11 +179,13 @@ header .headerButtons {
     background: transparent;
     color: #555;
 }
+
 .btn2:hover {
     background: #0d99ff;
     color: white;
     border: 2px solid #0d99ff;
 }
+
 .headerText {
     display: flex;
     align-items: center;
@@ -166,9 +193,11 @@ header .headerButtons {
     gap: 10px;
     font-size: 18px;
 }
+
 .headerText strong {
     font-size: 23px;
 }
+
 .headerText span {
     font-weight: 100;
     color: #555;
@@ -180,25 +209,30 @@ header .headerButtons {
     text-align: center;
     padding: 150px 0px;
 }
+
 .section1 h1 {
     font-size: 60px;
 }
+
 .section1Cards {
     display: flex;
     width: 80%;
     margin: 10px auto;
     justify-content: space-around;
 }
+
 .section1Card img {
     height: 30px;
     object-fit: contain;
 }
-.section1Cards .section1Card h2{
+
+.section1Cards .section1Card h2 {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 10px 0px;
 }
+
 .section1Card p {
     font-size: 18px;
     color: #555;
@@ -209,20 +243,24 @@ header .headerButtons {
 .content {
     text-align: center;
 }
+
 .content a {
     color: #0d99ff;
     font-weight: 900;
     text-transform: uppercase;
 }
+
 .content h1 {
     font-size: 60px;
     padding: 35px 0px;
 }
+
 .content p {
     font-size: 18px;
     line-height: 25px;
     color: #555;
 }
+
 .content button {
     margin: 20px 0px;
     padding: 15px 50px;
@@ -234,25 +272,30 @@ header .headerButtons {
     border: 1px solid #555;
     color: #999;
 }
+
 .content2 {
     display: flex;
     width: 90%;
     margin-left: auto;
     padding: 100px 0px;
 }
+
 .content2 h1 {
     margin-top: 60px;
     font-size: 50px;
 }
+
 .content2 h1 span {
     color: #0d99ff;
 }
+
 .content2 li {
-    margin: 20px 0px ;
+    margin: 20px 0px;
     display: flex;
     gap: 10px;
     align-items: center;
 }
+
 .content2 li span {
     display: block;
     width: 25px;
@@ -263,23 +306,28 @@ header .headerButtons {
     border-radius: 50%;
     background: #555;
 }
-.content2 > div {
-    flex:1;
+
+.content2>div {
+    flex: 1;
     position: relative;
-} 
+}
+
 .content2 img {
     width: 100%;
 }
+
 .contentLeftButtons {
     display: flex;
     gap: 15px;
 }
+
 .contentLeftButtons button {
     width: 170px;
     height: 45px;
     font-size: 16px;
     border-radius: 5px;
 }
+
 .contentLeftShape {
     position: absolute;
     z-index: -1;
@@ -289,33 +337,228 @@ header .headerButtons {
     height: 200px;
     background: #555;
 }
+
+/* section2  */
+.section2 {
+    width: 90%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.section2 a {
+    color: #0d99ff;
+    font-weight: 700;
+}
+
+.section2 h1 {
+    font-size: 50px;
+}
+
+.section2 p {
+    font-size: 18px;
+    line-height: 22px;
+    color: #999;
+    margin: 10px 0px;
+}
+
+.section2df {
+    display: flex;
+    gap: 20px;
+    text-align: start;
+}
+
+.section2df>div {
+    flex: 1;
+    position: relative;
+    padding: 20px 0px 0px 20px;
+    background: #222;
+}
+
+.section2df span {
+    color: rgb(5, 252, 5);
+    font-weight: 500;
+}
+
+.section2df ul {
+    font-size: 50px;
+    padding-top: 30px;
+}
+
+.section2df ul h5 {
+    color: #555;
+}
+
+.section2Left img {
+    width: 90%;
+    display: block;
+    margin-left: auto;
+
+}
+
+.section2 button {
+    padding: 10px 40px;
+    margin: 40px 0px;
+    border-radius: 5px;
+}
+
+/* section3  */
+
+.section3 {
+    padding: 30px 0px;
+}
+
+.section3 a {
+    color: #0d99ff;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.section3 h2 {
+    font-size: 50px;
+}
+
+.section3 ul {
+    color: #555;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.section3 a,
+.section3 h2,
+.section3 ul {
+    padding: 10px 0px;
+    display: block;
+    text-align: center;
+}
+
+/* section4 */
+.section4 {
+    width: 95%;
+    margin: 0px auto;
+    text-align: center;
+    padding: 50px 0px;
+}
+
+.section4 h1 {
+    font-size: 60px;
+}
+
+.section4 img {
+    margin: 50px 0px;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* section5 */
+.section5 {
+    margin: 50px 0px;
+    width: 100%;
+    font-size: 25px;
+    text-align: center;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: center/cover url("./images/Image\ \(4\).png");
+}
+
+/* section6 */
+.section6 {
+    padding: 50px 0px;
+    text-align: center;
+}
+
+.section6 img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.section6 h1 {
+    margin: 20px 0px;
+    font-size: 60px;
+}
+
+.section6 p {
+    font-size: 27px;
+}
+
+.section6 button {
+    margin: 30px 0px;
+    padding: 15px 60px;
+    font-size: 17px;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+.section6 .headerText img {
+    width: 30px;
+    height: 30px;
+}
+
+/* footer  */
+footer {
+    display: flex;
+    padding: 40px 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerLeft {
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    align-items: center;
+    font-size: 19px;
+}
+
+.footerLeft img {
+    width: 130px;
+}
+
+.footerRight {
+    display: flex;
+    gap: 30px;
+}
+
+.footerRight a:hover {
+    color: #0d99ff;
+}
+
 @media screen and (max-width:880px) {
     .navbar .navLinks {
         display: none;
     }
+
     .navbar .navButtons {
         display: none;
     }
+
     .navbar .menu {
         display: block;
         font-size: 24px;
     }
+
     header h1 {
         font-size: 40px;
     }
+
     .section1 .section1Cards {
         flex-wrap: wrap;
     }
+
     .section1Cards .section1Card {
         padding: 10px;
         margin: 30px 0px;
         width: 300px;
     }
+
     .content2 {
         display: block;
         width: 100%;
         margin-left: 0px;
     }
+
     .content2 .contentLeft {
         display: flex;
         justify-content: center;
@@ -324,9 +567,18 @@ header .headerButtons {
         text-align: center;
         margin: 40px 0px;
     }
+
     .content2 .contentRight img {
-       width: 90%;
-       display: block;
-       margin: auto;
+        width: 90%;
+        display: block;
+        margin: auto;
+    }
+
+    .section2 .section2df {
+        display: block;
+    }
+
+    .section2df>div {
+        margin: 50px 0px;
     }
 }
